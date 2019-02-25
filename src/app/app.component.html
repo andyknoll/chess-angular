@@ -1,0 +1,19 @@
+<main class="no-select">
+
+  <h2><span class="logo-main"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Angular Routing Presentation</h2>
+  <p>Andy Knoll - Jan 10, 2019</p>
+
+  <!-- routerLink is what points to the route - calc1 is wrong now! -->
+  <!-- <a routerLink="/calc1" routerLinkActive="active">Router Topic 1</a> -->
+  <!-- the app runs but throws a cannot match route error -->
+  <nav class="topics">
+      <a routerLink="/topic1"  routerLinkActive="active">Intro</a>
+      <a routerLink="/topic2"  routerLinkActive="active">Router Module</a>
+      <a routerLink="/topic3"  routerLinkActive="active">Route Linking</a>
+      <a routerLink="/topic4a" routerLinkActive="active">Route Types</a>
+      <a routerLink="/topic5"  routerLinkActive="active">About</a>
+  </nav>
+
+  <router-outlet></router-outlet>
+
+</main>

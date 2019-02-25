@@ -1,0 +1,38 @@
+<div class="header">
+	<h2>Route Linking</h2>	
+</div>
+
+<nav>
+	<a class="prev" routerLink="/topic2"  routerLinkActive="active">&lt;&lt;</a>
+	<a class="next" routerLink="/topic4a" routerLinkActive="active">&gt;&gt;</a>
+</nav>
+
+<div class="pad-3">
+	<br>
+	<h4>RouterLink directive</h4>
+	<ul>
+		<li>
+			The URL could arrive directly from the browser address bar. 
+			But most of the time you navigate as a result of some user action such as the click of an anchor tag.
+		</li><br>
+		<li>
+			The RouterLinkActive directive toggles css classes for active RouterLink bindings based on the current RouterState.<br>
+			<br>
+			<code>&lt;a routerLink="/heroes" routerLinkActive="active"> Heroes &lt;/a&gt;</code>
+		</li>
+	</ul>
+
+	<h4>&lt;router-outlet&gt; element</h4>
+	<ul>
+		<li>
+			The RouterOutlet is a directive from the router library that is used like a component. 
+			It acts as a placeholder that marks the spot in the template where the router should display the components for that outlet.
+		</li><br>
+		<li>
+			When the browser URL for this application becomes /heroes, the router matches that URL to the 
+			route path /heroes and displays the HeroListComponent as a sibling element to the RouterOutlet
+		</li><br>
+	</ul>
+
+
+</div>

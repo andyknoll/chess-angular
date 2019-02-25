@@ -1,0 +1,36 @@
+<div class="header">
+	<h2>Types of Routes - Guarded</h2>	
+</div>
+
+<nav>
+	<a class="prev" routerLink="/topic4e" routerLinkActive="active">&lt;&lt;</a>
+	<a class="next" routerLink="/topic5"  routerLinkActive="active">&gt;&gt;</a>
+</nav>
+
+<div class="pad-3">
+	<br>
+	<h4>Guarded routes (Route guards)</h4>
+
+	<p>Most times any user can navigate anywhere in the application anytime. That's not always the right thing to do.</p>
+
+	<ul>
+		<li>Perhaps the user is not authorized to navigate to the target component.</li>
+		<li>Maybe the user must login (authenticate) first.</li>
+		<li>Maybe you should fetch some data before you display the target component.</li>
+		<li>You might want to save pending changes before leaving a component.</li>
+		<li>You might ask the user if it's OK to discard pending changes rather than save them.</li>
+	</ul>
+
+	<p>
+		You add guards to the route configuration to handle these scenarios.
+		A guard's return value controls the router's behavior:
+	</p>
+
+	<ul>
+    <li>If it returns true, the navigation process continues.</li>
+    <li>If it returns false, the navigation process stops and the user stays put.</li>
+    <li>If it returns a UrlTree, the current navigation cancels and a new navigation is initiated to the UrlTree returned.</li>
+	</ul>
+
+</div>
+

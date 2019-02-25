@@ -1,0 +1,50 @@
+<div class="header">
+	<h2>Router Module</h2>	
+</div>
+
+<nav>
+	<a class="prev" routerLink="/topic1" routerLinkActive="active">&lt;&lt;</a>
+	<a class="next" routerLink="/topic3" routerLinkActive="active">&gt;&gt;</a>
+</nav>
+
+<div class="pad-3">
+	<br>
+	<h4>Use an AppRoutingModule</h4>
+
+	<ul>
+		<li>
+			The Angular Router is an optional service that presents a particular component view for a given URL. It is not part of the Angular core. 
+		</li><br>
+		<li>
+			In Angular, the best practice is to load and configure the router in a separate, top-level module that is 
+			dedicated to routing and imported by the root AppModule.
+		</li><br>	
+		<li>
+			By convention, the module class name is AppRoutingModule and it belongs in the app-routing.module.ts in the src/app folder.
+		</li><br>
+		<li>
+			You generally don't declare components in a routing module.
+		</li><br>
+		<li>
+			A router has no routes until you configure it.
+		</li><br>	
+		<li>
+			A route has "path" and "component" properties. 
+			<pre>path: 'topic1', component: Topic1</pre>
+		</li><br>	
+		
+		<!--
+		<pre>
+			{ path: 'topic1', component: Topic1 },      // Intro page
+		</pre>
+		<code>
+			const routes: Routes = [
+			{ path: '',       component: Topic1 },      // empty route
+			{ path: 'topic1', component: Topic1 },      // Intro page
+			{ path: 'topic2', component: Topic2 },
+		</code>
+		-->
+
+	</ul>
+</div>
+

@@ -1,0 +1,53 @@
+<div class="header">
+	<h2>Types of Routes - Active</h2>	
+</div>
+
+<nav>
+	<a class="prev" routerLink="/topic4a" routerLinkActive="active">&lt;&lt;</a>
+	<a class="next" routerLink="/topic4c" routerLinkActive="active">&gt;&gt;</a>
+</nav>
+
+<div class="pad-3">
+	<br>
+	<h4>Active routes</h4>
+
+	<p>
+	The route path and parameters are available through an injected router service called the ActivatedRoute. 
+	It has a great deal of useful information including:
+	</p>
+
+	<ul>
+		<li>
+		<b>url</b> 		
+		An Observable of the route path(s), represented as an array of strings for each part of the route path.
+		</li><br>
+
+		<li>
+		<b>data</b>
+		An Observable that contains the data object provided for the route. Also contains any resolved values from the resolve guard.
+		</li><br>
+
+		<li>
+		<b>paramMap</b>
+		An Observable that contains a map of the required and optional parameters specific to the route. The map supports retrieving 
+		single and multiple values from the same parameter.
+		</li><br>
+		
+		<li>
+		<b>queryParamMap</b>
+		An Observable that contains a map of the query parameters available to all routes. 
+		The map supports retrieving single and multiple values from the query parameter.
+		</li><br>
+		
+		<li>
+		<b>fragment</b>
+		An Observable of the URL fragment available to all routes.
+		</li><br>
+
+		<li>
+		<b>outlet</b>
+		The name of the RouterOutlet used to render the route. For an unnamed outlet, the outlet name is primary.
+		</li><br>
+	</ul>
+</div>
+

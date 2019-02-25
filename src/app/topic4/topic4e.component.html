@@ -1,0 +1,29 @@
+<div class="header">
+	<h2>Types of Routes - Wildcard</h2>	
+</div>
+
+<nav>
+	<a class="prev" routerLink="/topic4d" routerLinkActive="active">&lt;&lt;</a>
+	<a class="next" routerLink="/topic4f" routerLinkActive="active">&gt;&gt;</a>
+</nav>
+
+<div class="pad-3">
+	<br>
+	<h4>Wildcard routes</h4>
+
+	<p>
+		Add a wildcard route to intercept invalid URLs and handle them gracefully. A wildcard route has a path consisting of two asterisks. 
+		It matches every URL. The router will select this route if it can't match a route earlier in the configuration. 
+		A wildcard route can navigate to a custom "404 Not Found" component or redirect to an existing route.
+	</p>
+
+	<p>
+		The router selects the route with a first match wins strategy. Wildcard routes are the least specific routes in the route configuration. 
+		Be sure it is the last route in the configuration.		
+	</p>
+
+	<pre>path: '**', component: PageNotFoundComponent </pre>
+
+	<p>When the user visits any invalid URL, the browser displays "Page not found". The browser address bar continues to point to the invalid URL.</p>
+</div>
+
